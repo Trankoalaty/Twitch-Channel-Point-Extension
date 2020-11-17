@@ -1,0 +1,31 @@
+{
+  
+  "manifest_version": 2,
+  "name": "Twitch Point Reward Redemption",
+  "version": "1.0",
+
+  "description": "Script to watch the twitch channel point reward redemption window and redeem specific channel points and mark as completed",
+  "icons": {	
+  "32": "icon32.png",
+  "64": "icon64.png",
+  "128": "icon128.png"
+  },
+  
+  "content_scripts": [
+		{
+			"matches": ["YOUR STREAM MANAGER URL HERE"],
+			"js": ["content_script.js"]
+		}
+	],
+  
+  "page_action": {
+
+	"default_title": "Twitch Point Reward Redemption"	
+  },
+ 
+  "permissions": [
+  "activeTab"
+  ,  "YOUR STREAM MANAGER URL HERE"
+  ]
+ 
+}
